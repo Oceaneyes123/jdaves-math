@@ -12,7 +12,7 @@
         <br />Find the Corresponding Color Below
       </v-card>
       <v-row v-for="(row, rowIndex) in 8" :key="rowIndex">
-        <v-col cols="4" v-for="(column, index) in 12" :key="index">
+        <v-col cols="3" md="12" v-for="(column, index) in 12" :key="index">
           <v-card
             :color="populateColor(column + ((row - 1) * 12) -1)"
             class="text-center pa-3"
